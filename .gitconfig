@@ -1,0 +1,10 @@
+[user]
+  name = a-void
+  email = avitiuk@me.com
+
+[push]
+  default = current
+
+[alias]
+  s = status
+
