@@ -34,7 +34,7 @@ hi StatusLineNC ctermfg=240 ctermbg=232
 hi StatusLineErr ctermfg=5 ctermbg=5| " haven't tested yet
 hi Visual ctermbg=215 ctermfg=235
 hi LineNr ctermfg=240
-hi MatchParen ctermbg=215 ctermfg=237
+hi MatchParen ctermbg=216 ctermfg=232
 hi Directory ctermfg=25
 hi Comment ctermfg=237
 hi Folded ctermfg=243 ctermbg=232
@@ -97,13 +97,15 @@ hi jsTemplateString ctermfg=180
 hi jsComment ctermfg=237
 """""""""""""""""""""""""""""""""" green
 hi jsNumber ctermfg=28
+hi jsFloat ctermfg=28
 """""""""""""""""""""""""""""""""" blue
 hi jsClassFuncName ctermfg=25
 hi jsFuncCall ctermfg=25
 hi jsFuncName ctermfg=25
 hi jsClassFuncName ctermfg=25
+hi jsClassProperty ctermfg=25
+hi jsGlobalObjects ctermfg=25
 """""""""""""""""""""""""""""""""" yellow
-hi jsGlobalObjects ctermfg=214
 hi jsObjectProp ctermfg=214
 """""""""""""""""""""""""""""""""" red
 hi jsExportDefault ctermfg=124
@@ -116,12 +118,12 @@ hi jsGlobalNodeObjects ctermfg=124
 hi jsTemplateBraces ctermfg=124
 """""""""""""""""""""""""""""""""" white
 hi jsModuleKeyword ctermfg=248
+hi jsBlockLabel ctermfg=248
 hi jsClassDefinition ctermfg=248
 hi jsModuleAsterisk ctermfg=248
 hi jsTernaryIfOperator ctermfg=248
 hi jsObjectKey ctermfg=248
 hi jsVariableDef ctermfg=248
-hi jsClassProperty ctermfg=248
 hi jsClassValue ctermfg=248
 hi jsSpreadExpression ctermfg=248
 hi jsParen ctermfg=248
@@ -141,7 +143,10 @@ hi jsParens ctermfg=240
 hi jsParensError ctermfg=240
 hi jsNoise ctermfg=240
 hi jsBraces ctermfg=240
+hi jsSwitchBraces ctermfg=240
+hi jsSwitchColon ctermfg=240
 hi jsClassBraces ctermfg=240
+hi JsIfElseBraces ctermfg=240
 hi jsObjectBraces ctermfg=240
 hi jsModuleBraces ctermfg=240
 hi jsBrackets ctermfg=240
