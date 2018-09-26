@@ -1,16 +1,19 @@
-set number              " show line numbers
-set autoindent          " auto indent
-set ignorecase          " ignore case when searching
+" show line numbers
+set number
+set autoindent
+" ignore case when searching
+set ignorecase
 set smartcase           " ignore case if search pattern is all lowercase, case-sensitive otherwise
 set smarttab            " indent start of line based on context
 set history=50          " keep 50 lines of command line history
 set expandtab           " replace <TAB> with spaces
 set laststatus=2        " always show statusline
-
 set hidden              " hide buffers when abandoned
 set nobackup
 set noswapfile
 set showcmd             " show incomplete commands
+set timeoutlen=1000     " fix slow SHIFT-O
+set ttimeoutlen=0       " fix slow SHIFT-O
 
 set pastetoggle=<F2>
 set foldmethod=indent   " sets default fold method to indent
@@ -40,7 +43,7 @@ autocmd BufWritePre * :retab
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Key remaps
-map 0 ^
+"map 0 ^
 :nmap <F1> <nop>
 :imap <F1> <nop>
 inoremap <F1> <nop>
@@ -75,3 +78,4 @@ execute pathogen#infect()
 syntax on
 colorscheme dev1ce
 
+" :%!python -m json.tool

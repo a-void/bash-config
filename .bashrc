@@ -4,6 +4,9 @@ export EDITOR=vim
 # prevent less from storing history
 export LESSHISTFILE=/dev/null
 
+# exercism
+export PATH=~/exercism/:$PATH
+
 # aliases
 alias act='open /Applications/Utilities/Activity\ Monitor.app'
 alias ui='cd ~/git/wealthscope/wealthscope-ui/'
