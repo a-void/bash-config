@@ -107,7 +107,6 @@ hi jsFrom ctermfg=208
 hi jsImport ctermfg=208
 hi jsExport ctermfg=208
 hi jsFunction ctermfg=208
-hi jsArrowFunction ctermfg=208
 hi jsClassBlock ctermfg=208
 """""""""""""""""""""""""""""""""" calm_yellow
 hi jsString ctermfg=180
@@ -122,10 +121,12 @@ hi jsFloat ctermfg=28
 hi jsTaggedTemplate ctermfg=28
 """""""""""""""""""""""""""""""""" blue
 hi jsClassFuncName ctermfg=32
+hi jsObjectFuncName ctermfg=32
 hi jsFuncCall ctermfg=32
 hi jsFuncName ctermfg=32
 hi jsClassFuncName ctermfg=32
 hi jsClassProperty ctermfg=32
+hi jsArrowFunction ctermfg=32
 hi jsGlobalObjects ctermfg=222
 """""""""""""""""""""""""""""""""" yellow
 hi jsObjectProp ctermfg=214
@@ -210,8 +211,10 @@ hi jsxRegion ctermfg=250
 """"""""""""""""""""
 hi htmlComment ctermfg=242
 hi htmlCommentPart ctermfg=242
-hi htmlTag ctermfg=208
-hi htmlEndTag ctermfg=208
+hi htmlTag ctermfg=165
+hi htmlEndTag ctermfg=165
+hi htmlSpecialTagName ctermfg=165
+hi vueSurroundingTag ctermfg=165
 hi htmlTagName ctermfg=208
 hi htmlArg ctermfg=32
 hi htmlString ctermfg=180
@@ -277,6 +280,7 @@ hi stylusFunction ctermfg=32
 hi stylusIdChar ctermfg=116
 hi stylusId ctermfg=116
 
+hi cssClassName ctermfg=160
 hi stylusClass ctermfg=160
 hi stylusClassChar ctermfg=160
 hi stylusImport ctermfg=160
@@ -306,6 +310,56 @@ hi cssTextVal ctermfg=173
 hi cssFontVal ctermfg=173
 hi cssString ctermfg=173
 hi cssStringQQ ctermfg=173
+
+" vue-specific css overrides
+""""""""""""""""""""""""""
+hi vue_less ctermfg=180
+hi cssClassName ctermfg=180
+hi cssClassNameDot ctermfg=180
+hi cssAuralAttr ctermfg=180
+hi lessAmpersand ctermfg=180
+hi cssPseudoClassId ctermfg=180
+hi cssUIProp ctermfg=180
+
+hi cssNoise ctermfg=242
+hi cssBraces ctermfg=242
+hi cssBraceError ctermfg=242
+hi cssAttrComma ctermfg=242
+
+hi cssUIAttr ctermfg=250
+hi cssColor ctermfg=250
+hi cssDimensionProp ctermfg=250
+hi cssPositioningProp ctermfg=250
+hi cssPageProp ctermfg=250
+hi cssValueLength ctermfg=250
+hi cssValueNumber ctermfg=250
+hi cssUnitDecorators ctermfg=250
+hi cssBackgroundAttr ctermfg=250
+hi cssBorderAttr ctermfg=250
+hi cssFontAttr ctermfg=250
+hi cssTextAttr ctermfg=250
+hi cssBoxAttr ctermfg=250
+hi cssMultiColumnAttr ctermfg=250
+hi cssPositioningAttr ctermfg=250
+hi cssCommonAttr ctermfg=250
+hi cssTransformProp ctermfg=250
+hi cssValueAngle ctermfg=250
+hi cssTransitionProp ctermfg=250
+hi cssValueTime ctermfg=250
+hi cssTableAttr ctermfg=250
+
+hi cssFunctionName ctermfg=32
+
+hi cssStringQ ctermfg=208
+hi cssStringQQ ctermfg=208
+
+" pug
+""""""""""""""""""""""""""
+hi pugJavascriptString ctermfg=180
+hi pugClass ctermfg=160
+hi pugId ctermfg=165
+hi pugAttributesDelimiter ctermfg=242
+hi pugAttributes ctermfg=32
 
 " yarn.lock Highlighting "
 """"""""""""""""""""""""""
