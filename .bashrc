@@ -4,15 +4,18 @@ export EDITOR=vim
 # prevent less from storing history
 export LESSHISTFILE=/dev/null
 
-# exercism
-export PATH=~/exercism/:$PATH
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # aliases
 alias act='open /Applications/Utilities/Activity\ Monitor.app'
-alias ui='cd ~/git/wealthscope/wealthscope-ui/'
-alias api='cd ~/git/wealthscope/wealthscope-api/'
+alias ui='cd ~/git/clearbanc-ui/'
+alias api='cd ~/git/clearbanc-api/'
 alias ls='ls -lahG'
 alias du='du -hcs'
+alias seek='grep -lri --exclude-dir={node_modules,tests,test}'
 
 # colors:
 GREEN="\[\033[0;32m\]"
@@ -55,3 +58,4 @@ PROMPT_COMMAND=prompt
 # OSX
 # defaults write NSGlobalDomain InitialKeyRepeat -int 12        # normal minimum is 15 (225 ms)
 # defaults write NSGlobalDomain KeyRepeat -int 2                # normal minimum is 2 (30 ms)
+
