@@ -23,6 +23,7 @@ set incsearch           " auto-move to first found search member
 set hlsearch            " highlight all search matches
 set splitright          " opens newsly split window on the right
 set backspace=indent,eol,start " allow backspacing indents
+" let g:rg_highlight="true" " highlight for vim-ripgrep
 " set colorcolumn=100
 
 " Copy selected to buffer
@@ -56,9 +57,13 @@ map <S-Tab> <C-W>W
 map - <C-W>>
 map = <C-W><
 
+map f <C-P>
+
 " ctrlP.vim
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
-" let g:ctrlp_user_command = [‘.git/’, ‘git --git-dir=%s/.git ls-files -oc --exclude-standard’]
+set runtimepath^=~/.vim/pack/plugins/start/ctrlp.vim
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+" let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
 
 " vim-javascript
 " let g:javascript_enable_domhtmlcss = 1
@@ -72,9 +77,6 @@ set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\   " highlight
 set statusline+=[%{strlen(&ft)?&ft:'none'},                         " filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},                        " encoding
 set statusline+=%{&fileformat}]                                     " file format
-
-" Pathogen
-execute pathogen#infect()
 
 syntax on
 colorscheme dev1ce

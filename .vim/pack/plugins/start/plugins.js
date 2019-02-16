@@ -4,4 +4,5 @@ const plugins = [
   'vim-json',
   'vim-javascript',
   'vim-ripgrep',
+  'ctrlp.vim',
 ];

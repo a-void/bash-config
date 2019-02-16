@@ -72,6 +72,7 @@ hi NonText ctermfg=160
 hi netrwClassify ctermfg=32
 hi netrwComment ctermfg=242
 hi netrwVersion ctermfg=215
+hi netrwList ctermfg=250
 
 hi TabLineFill ctermfg=232 ctermbg=179
 hi TabLineSel ctermfg=232 ctermbg=179
@@ -135,7 +136,7 @@ hi jsExportDefault ctermfg=160
 hi jsThis ctermfg=160
 hi jsTry ctermfg=160
 hi jsCatch ctermfg=160
-hi jsOperator ctermfg=160
+hi jsOperatorKeyword ctermfg=160
 hi jsException ctermfg=160
 hi jsExceptions ctermfg=160
 hi jsStatement ctermfg=160
@@ -150,7 +151,7 @@ hi jsTemplateBraces ctermfg=130
 hi jsSuper ctermfg=165
 """""""""""""""""""""""""""""""""" white
 hi jsModuleKeyword ctermfg=250
-hi jsOperator2 ctermfg=250
+hi jsOperator ctermfg=250
 hi jsBlockLabel ctermfg=250
 hi jsClassDefinition ctermfg=250
 hi jsModuleAsterisk ctermfg=250
