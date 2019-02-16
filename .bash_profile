@@ -1,5 +1,5 @@
 # git-prompt
-source $HOME/git/git-prompt.sh
+source $HOME/git/bash-config/git-prompt.sh
 
 # .bashrc
 source $HOME/.bashrc

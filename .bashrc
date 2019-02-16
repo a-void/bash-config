@@ -11,11 +11,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # aliases
 alias act='open /Applications/Utilities/Activity\ Monitor.app'
-alias ui='cd ~/git/clearbanc-ui/'
-alias api='cd ~/git/clearbanc-api/'
+alias ui='cd ~/git/clearbanc/ui/'
+alias api='cd ~/git/clearbanc/api/'
 alias ls='ls -lahG'
 alias du='du -hcs'
-alias seek='grep -lri --exclude-dir={node_modules,tests,test}'
+alias seek='grep -lri --exclude-dir={node_modules,dist,.git}'
+alias find='find . -name'
 
 # colors:
 GREEN="\[\033[0;32m\]"
@@ -56,6 +57,7 @@ prompt() {
 PROMPT_COMMAND=prompt
 
 # OSX
-# defaults write NSGlobalDomain InitialKeyRepeat -int 12        # normal minimum is 15 (225 ms)
-# defaults write NSGlobalDomain KeyRepeat -int 2                # normal minimum is 2 (30 ms)
+# defaults write NSGlobalDomain InitialKeyRepeat -int 12                  # normal minimum is 15 (225 ms)
+# defaults write NSGlobalDomain KeyRepeat -int 2                          # normal minimum is 2 (30 ms)
+# defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool yes  # disable power/sleep button
 
