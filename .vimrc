@@ -81,5 +81,8 @@ set statusline+=%{&fileformat}]                                     " file forma
 syntax on
 colorscheme dev1ce
 
-" pretty-format json string
+" pretty-format json string:
 " :%!python -m json.tool
+
+" search for multiple patterns in the same file:
+" grep -lri 'pattern1' `grep -lri 'pattern2' ./`
