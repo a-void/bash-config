@@ -10,13 +10,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # aliases
-alias act='open /Applications/Utilities/Activity\ Monitor.app'
-alias ui='cd ~/git/clearbanc/ui/'
-alias api='cd ~/git/clearbanc/api/'
 alias ls='ls -lahG'
 alias du='du -hcs'
 alias seek='grep -lri --exclude-dir={node_modules,dist,.git}'
 alias find='find . -name'
+alias garbage='sed -i -e "s/http:\/\//https:\/\//g" package-lock.json; rm package-lock.json-e;'
 
 # colors:
 GREEN="\[\033[0;32m\]"
