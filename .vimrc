@@ -38,6 +38,7 @@ autocmd BufReadPost *
 " Remove all trailing whitespace on file write
 autocmd BufWritePre * :retab
 autocmd BufWritePre * :%s/\s\+$//e
+" au BufRead,BufNewFile *.ts set filetype=javascript
 
 " vim-vue disable checking for pre-processors
 " let g:vue_disable_pre_processors=1
@@ -47,11 +48,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Key remaps
 "map 0 ^
-:nmap <F1> <nop>
-:imap <F1> <nop>
-inoremap <F1> <nop>
+:nmap + :%!python -m json.tool<CR>
+:imap <F1> <Nop>
+inoremap <F1> <Nop>
 nnoremap gb :ls<CR>:b<Space>
 nnoremap \ :syntax sync fromstart<CR>
+nnoremap _ :%!git blame -- %<CR>
 map <Tab> <C-W><C-W>
 map <S-Tab> <C-W>W
 map - <C-W>>
@@ -59,11 +61,26 @@ map = <C-W><
 
 map f <C-P>
 
+" disabled indentation for typescript-vim
+let g:typescript_indent_disable = 1
+
 " ctrlP.vim
 set runtimepath^=~/.vim/pack/plugins/start/ctrlp.vim
-" set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-" let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = '0'
+let g:ctrlp_custom_ignore = 'dist\|node_modules\|DS_Store'
+let g:ctrlp_buffer_func = {
+    \ 'enter': 'HideStatus',
+    \ 'exit':  'ShowStatus',
+    \ }
+
+func! HideStatus()
+    set laststatus=0
+endfunc
+
+func! ShowStatus()
+    set laststatus=2
+endfunc
 
 " vim-javascript
 " let g:javascript_enable_domhtmlcss = 1
@@ -81,8 +98,6 @@ set statusline+=%{&fileformat}]                                     " file forma
 syntax on
 colorscheme dev1ce
 
-" pretty-format json string:
+" pretty-format json string
 " :%!python -m json.tool
 
-" search for multiple patterns in the same file:
-" grep -lri 'pattern1' `grep -lri 'pattern2' ./`

@@ -17,10 +17,12 @@ let string = 180
 let teal = 116
 let red = 160
 let yellow = 215
+let brightYellow = 11
 let orange = 208
 let black = 232
 let grey = 242
 let white = 250
+let string = 180
 
 " Vim Highlighting "
 """"""""""""""""""""
@@ -43,6 +45,7 @@ hi ModeMsg ctermfg=208 ctermbg=232
 hi Question ctermfg=208
 hi MoreMsg ctermfg=208
 hi ColorColumn ctermfg=160 ctermbg=236
+hi CursorLine ctermfg=180 ctermbg=232 cterm=none
 
 hi DiffAdd ctermfg=28 ctermbg=232
 hi DiffDelete ctermfg=160 ctermbg=232
@@ -91,6 +94,7 @@ hi pythonInclude ctermfg=208
 
 " JavaScript Highlighting "
 """""""""""""""""""""""""""""""""" orange
+hi jsAsyncKeyword ctermfg=11
 hi jsNull ctermfg=210
 hi jsUndefined ctermfg=210
 hi jsBooleanFalse ctermfg=210
@@ -230,6 +234,8 @@ hi gitrebaseSquash ctermfg=160
 hi gitrebaseFixup ctermfg=160
 hi gitrebaseExec ctermfg=160
 hi gitrebaseDrop ctermfg=160
+hi gitrebaseSummary ctermfg=215
+hi gitrebaseCommit ctermfg=250
 hi gitconfigSection ctermfg=160
 hi gitconfigVariable ctermfg=208
 hi gitconfigBoolean ctermfg=210
@@ -366,3 +372,45 @@ hi pugAttributes ctermfg=32
 """"""""""""""""""""""""""
 hi confString ctermfg=215
 hi confComment ctermfg=242
+
+" TypeScript Highlighting "
+""""""""""""""""""""""""""""""""""
+hi typescriptDotNotation ctermfg=208
+hi typescriptFuncKeyword ctermfg=208
+hi typescriptReserved ctermfg=208
+hi typescriptStorageClass ctermfg=208
+hi typescriptStatement ctermfg=208
+hi typescriptConditional ctermfg=208
+hi typescriptStringS ctermfg=180
+hi typescriptStringB ctermfg=180
+hi typescriptStringD ctermfg=180
+hi typescriptOpSymbols ctermfg=250
+hi typescriptLogicSymbols ctermfg=250
+hi typescriptBraces ctermfg=242
+hi typescriptParens ctermfg=242
+hi typescriptEndColons ctermfg=242
+hi typescriptRepeat ctermfg=160
+hi typescriptExceptions ctermfg=160
+hi typescriptBoolean ctermfg=210
+hi typescriptLabel ctermfg=11
+hi typescriptNumber ctermfg=28
+hi typescriptOperator ctermfg=160
+hi typescriptInterpolationDelimiter ctermfg=130
+hi typescriptSpreadOperator ctermfg=208
+hi typescriptDotNotation ctermfg=250
+hi typescriptNull ctermfg=210
+hi typescriptFuncCall ctermfg=32
+hi typescriptObjectProp ctermfg=214
+hi typescriptGlobalObjects ctermfg=222
+hi typescriptIdentifier ctermfg=160
+hi typescriptType ctermfg=165
+hi typescriptCommentTodo ctermfg=232 ctermbg=160
+
+" SQL Highlighting "
+""""""""""""""""""""""""""""""""""
+hi sqlString ctermfg=180
+hi sqlStatement ctermfg=160
+hi sqlKeyword ctermfg=160
+hi sqlNumber ctermfg=28
+hi Quote ctermfg=180
+
